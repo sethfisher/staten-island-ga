@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the siga voting feature.
+ */
+
+include_once 'siga_voting.features.inc';
