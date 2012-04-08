@@ -1,0 +1,8 @@
+name = "SIGA"
+description = "Features and configuration for the SIGA website"
+core = "7.x"
+package = "Features"
+dependencies[] = "ctools"
+dependencies[] = "strongarm"
+features[ctools][] = "strongarm:strongarm:1"
+features[variable][] = "clean_url"
