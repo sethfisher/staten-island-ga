@@ -40,7 +40,7 @@ function siga_voting_strongarm() {
       'teaser_display' => TRUE,
       'comment_display' => '2',
       'node_display_mode' => '1',
-      'teaser_display_mode' => '5',
+      'teaser_display_mode' => '1',
       'comment_display_mode' => '1',
       'roles' => array(
         2 => '2',
@@ -56,7 +56,7 @@ function siga_voting_strongarm() {
       'value_type' => 'points',
       'theme' => 'rate_template_thumbs_up_down',
       'css' => 'sites/all/modules/contrib/rate/templates/thumbs-up-down/thumbs-up-down.css',
-      'translate' => FALSE,
+      'translate' => TRUE,
     ),
   );
   $export['rate_widgets'] = $strongarm;
