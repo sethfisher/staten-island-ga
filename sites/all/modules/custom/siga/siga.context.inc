@@ -13,9 +13,9 @@ function siga_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'default';
-  $context->description = 'Sitewide context settings';
-  $context->tag = 'default';
+  $context->name = 'sitewide';
+  $context->description = 'The sitewide context to be used everywhere on the site';
+  $context->tag = 'sitewide';
   $context->conditions = array(
     'sitewide' => array(
       'values' => array(
@@ -26,17 +26,17 @@ function siga_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'system-navigation' => array(
-          'module' => 'system',
-          'delta' => 'navigation',
-          'region' => 'header',
-          'weight' => '-10',
-        ),
         'user-login' => array(
           'module' => 'user',
           'delta' => 'login',
           'region' => 'header',
           'weight' => '-10',
+        ),
+        'system-navigation' => array(
+          'module' => 'system',
+          'delta' => 'navigation',
+          'region' => 'header',
+          'weight' => '-9',
         ),
         'system-help' => array(
           'module' => 'system',
@@ -44,17 +44,11 @@ function siga_context_default_contexts() {
           'region' => 'help',
           'weight' => '-10',
         ),
-        'system-main' => array(
-          'module' => 'system',
-          'delta' => 'main',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',
           'region' => 'sidebar_first',
-          'weight' => '-14',
+          'weight' => '-10',
         ),
         'system-powered-by' => array(
           'module' => 'system',
@@ -69,9 +63,9 @@ function siga_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Sitewide context settings');
-  t('default');
-  $export['default'] = $context;
+  t('The sitewide context to be used everywhere on the site');
+  t('sitewide');
+  $export['sitewide'] = $context;
 
   return $export;
 }

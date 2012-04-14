@@ -10,7 +10,7 @@
 function siga_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access user profiles
+  // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -21,7 +21,7 @@ function siga_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: add media from remote sources
+  // Exported permission: add media from remote sources.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
     'roles' => array(
