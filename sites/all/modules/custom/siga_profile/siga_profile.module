@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the SIGA Profile feature.
+ */
+
+include_once 'siga_profile.features.inc';
