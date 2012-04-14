@@ -10,6 +10,16 @@
 function siga_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access contextual links.
+  $permissions['access contextual links'] = array(
+    'name' => 'access contextual links',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'contextual',
+  );
+
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
