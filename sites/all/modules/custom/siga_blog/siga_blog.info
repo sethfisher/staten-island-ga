@@ -6,6 +6,7 @@ php = 5.2.4
 dependencies[] = blog
 dependencies[] = context
 dependencies[] = context_layouts
+dependencies[] = search
 dependencies[] = siga_profile
 dependencies[] = strongarm
 dependencies[] = views

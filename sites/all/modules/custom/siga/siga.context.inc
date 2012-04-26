@@ -23,18 +23,7 @@ function siga_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'user-new' => array(
-          'module' => 'user',
-          'delta' => 'new',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
@@ -82,6 +71,18 @@ function siga_context_default_contexts() {
           'delta' => 'form',
           'region' => 'sidebar_first',
           'weight' => '-10',
+        ),
+        'user-new' => array(
+          'module' => 'user',
+          'delta' => 'new',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
+        'views-events-block' => array(
+          'module' => 'views',
+          'delta' => 'events-block',
+          'region' => 'sidebar_first',
+          'weight' => '-8',
         ),
         'system-powered-by' => array(
           'module' => 'system',

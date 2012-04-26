@@ -26,11 +26,17 @@ function siga_blog_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
         'views-blog_user_profile-block' => array(
           'module' => 'views',
           'delta' => 'blog_user_profile-block',
           'region' => 'sidebar_first',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
