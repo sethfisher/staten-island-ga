@@ -41,5 +41,37 @@ function siga_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: edit own comments.
+  $permissions['edit own comments'] = array(
+    'name' => 'edit own comments',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'comment',
+  );
+
+  // Exported permission: post comments.
+  $permissions['post comments'] = array(
+    'name' => 'post comments',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'comment',
+  );
+
+  // Exported permission: skip comment approval.
+  $permissions['skip comment approval'] = array(
+    'name' => 'skip comment approval',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'comment',
+  );
+
   return $permissions;
 }
