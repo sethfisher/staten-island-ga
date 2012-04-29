@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Enable the Mollom module
+ */
+function siga_update_7000() {
+  module_enable(array('mollom'));
+}
