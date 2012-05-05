@@ -73,5 +73,16 @@ function siga_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: subscribe to comments.
+  $permissions['subscribe to comments'] = array(
+    'name' => 'subscribe to comments',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'comment_notify',
+  );
+
   return $permissions;
 }
