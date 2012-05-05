@@ -6,3 +6,10 @@
 function siga_update_7000() {
   module_enable(array('mollom'));
 }
+
+/**
+ * Enable the Comment Notify module
+ */
+function siga_update_7001() {
+  module_enable(array('comment_notify'));
+}
