@@ -110,5 +110,14 @@ disable this by logging in and changing the settings on your user account at
   );
   $export['comment_notify_node_types'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_user_alert';
+  $strongarm->value = array(
+    0 => 'status',
+  );
+  $export['node_options_user_alert'] = $strongarm;
+
   return $export;
 }

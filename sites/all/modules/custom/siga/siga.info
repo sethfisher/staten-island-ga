@@ -38,3 +38,4 @@ features[variable][] = comment_notify_default_registered_mailalert
 features[variable][] = comment_notify_node_notify_default_mailalert
 features[variable][] = comment_notify_node_notify_default_mailtext
 features[variable][] = comment_notify_node_types
+features[variable][] = node_options_user_alert
