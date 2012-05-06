@@ -1653,3 +1653,11 @@ div.admin-panel .description {
 #sidebar-first #block-views-events-block .views-row {
   margin-bottom: 20px;
 }
+
+#featured {
+  padding-bottom: 20px;
+  text-align: inherit;
+}
+#block-user-alert-user-alert {
+  font-size: 16px;
+}
