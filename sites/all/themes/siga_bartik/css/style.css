@@ -1655,9 +1655,10 @@ div.admin-panel .description {
 }
 
 #featured {
-  padding-bottom: 20px;
+  padding: 0px;
   text-align: inherit;
 }
-#block-user-alert-user-alert {
+#block-user-alert-user-alert div.user-alert {
+  padding: 5px 0;
   font-size: 16px;
 }
