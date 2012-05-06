@@ -21,4 +21,5 @@ features[variable][] = comment_default_per_page_blog
 features[variable][] = comment_form_location_blog
 features[variable][] = comment_preview_blog
 features[variable][] = comment_subject_field_blog
+features[variable][] = field_bundle_settings_node__blog
 features[variable][] = pathauto_node_blog_pattern
