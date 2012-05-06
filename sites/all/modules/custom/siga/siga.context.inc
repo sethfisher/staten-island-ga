@@ -66,6 +66,12 @@ function siga_context_default_contexts() {
           'region' => 'help',
           'weight' => '-10',
         ),
+        'user_alert-user_alert' => array(
+          'module' => 'user_alert',
+          'delta' => 'user_alert',
+          'region' => 'featured',
+          'weight' => '-10',
+        ),
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',

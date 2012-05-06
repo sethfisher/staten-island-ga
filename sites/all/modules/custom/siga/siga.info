@@ -15,6 +15,7 @@ dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = search
 dependencies[] = strongarm
+dependencies[] = user_alert
 dependencies[] = views
 features[context][] = homepage
 features[context][] = sitewide
