@@ -13,3 +13,10 @@ function siga_update_7000() {
 function siga_update_7001() {
   module_enable(array('comment_notify'));
 }
+
+/**
+ * Enable the User Alert module
+ */
+function siga_update_7002() {
+  module_enable(array('user_alert'));
+}
