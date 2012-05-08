@@ -82,13 +82,13 @@ function siga_context_default_contexts() {
           'module' => 'views',
           'delta' => 'members-block',
           'region' => 'sidebar_first',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'views-events-block' => array(
           'module' => 'views',
           'delta' => 'events-block',
           'region' => 'sidebar_first',
-          'weight' => '-8',
+          'weight' => '-7',
         ),
         'system-powered-by' => array(
           'module' => 'system',
