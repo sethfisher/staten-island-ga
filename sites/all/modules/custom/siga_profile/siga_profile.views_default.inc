@@ -104,7 +104,7 @@ function siga_profile_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Members';
-  $handler->display->display_options['use_more_text'] = 'View All Users';
+  $handler->display->display_options['use_more_text'] = 'View All Members';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access user profiles';
   $handler->display->display_options['cache']['type'] = 'none';
