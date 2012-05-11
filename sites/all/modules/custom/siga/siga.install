@@ -36,3 +36,10 @@ function siga_update_7004() {
   // is a dependency of addthis_displays
   module_enable(array('addthis_displays'));
 }
+
+/**
+ * Enable the DrupalChat module
+ */
+function siga_update_7005() {
+  module_enable(array('drupalchat'));
+}
