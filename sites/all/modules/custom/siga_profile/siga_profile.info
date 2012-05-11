@@ -29,5 +29,6 @@ features[user_permission][] = disable own gravatar
 features[user_permission][] = use gravatar
 features[variable][] = field_bundle_settings_user__user
 features[variable][] = gravatar_default
+features[variable][] = pathauto_user_pattern
 features[views_view][] = blog_user_profile
 features[views_view][] = members
