@@ -27,3 +27,12 @@ function siga_update_7002() {
 function siga_update_7003() {
   module_enable(array('gravatar'));
 }
+
+/**
+ * Enable the Addthis module
+ */
+function siga_update_7004() {
+  // Enabling addthis_displays will automatically enable addthis, as addthis
+  // is a dependency of addthis_displays
+  module_enable(array('addthis_displays'));
+}
