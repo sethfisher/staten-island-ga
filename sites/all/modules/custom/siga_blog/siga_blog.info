@@ -23,3 +23,4 @@ features[variable][] = comment_preview_blog
 features[variable][] = comment_subject_field_blog
 features[variable][] = field_bundle_settings_node__blog
 features[variable][] = pathauto_node_blog_pattern
+features[variable][] = pathauto_user_pattern
