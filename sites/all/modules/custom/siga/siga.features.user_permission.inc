@@ -20,6 +20,16 @@ function siga_user_default_permissions() {
     'module' => 'contextual',
   );
 
+  // Exported permission: access drupalchat.
+  $permissions['access drupalchat'] = array(
+    'name' => 'access drupalchat',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'drupalchat',
+  );
+
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
