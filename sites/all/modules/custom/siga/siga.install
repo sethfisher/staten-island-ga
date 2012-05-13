@@ -43,3 +43,10 @@ function siga_update_7004() {
 function siga_update_7005() {
   module_enable(array('drupalchat'));
 }
+
+/**
+ * Enable the Libraries module
+ */
+function siga_update_7006() {
+  module_enable(array('libraries'));
+}
