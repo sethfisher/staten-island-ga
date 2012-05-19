@@ -19,6 +19,13 @@ function siga_group_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function siga_group_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function siga_group_node_info() {
