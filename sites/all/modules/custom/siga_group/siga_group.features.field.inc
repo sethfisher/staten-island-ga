@@ -51,6 +51,13 @@ function siga_group_field_default_fields() {
           'type' => 'text_default',
           'weight' => '1',
         ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
         'mini_teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
@@ -64,7 +71,7 @@ function siga_group_field_default_fields() {
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
-          'weight' => 1,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'node',
@@ -133,6 +140,15 @@ function siga_group_field_default_fields() {
           'type' => 'og_group_subscribe',
           'weight' => '0',
         ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'og_ui',
+          'settings' => array(
+            'field_name' => FALSE,
+          ),
+          'type' => 'og_group_subscribe',
+          'weight' => '0',
+        ),
         'mini_teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -140,10 +156,13 @@ function siga_group_field_default_fields() {
           'weight' => '6',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'og_ui',
+          'settings' => array(
+            'field_name' => 'og_group_ref',
+          ),
+          'type' => 'og_group_subscribe',
+          'weight' => '0',
         ),
       ),
       'display_label' => 1,
