@@ -117,6 +117,12 @@ function siga_group_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'group_content_entity_view_1' => array(
+          'teaser' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+        ),
       ),
     ),
   );
