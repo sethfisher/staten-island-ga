@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the SIGA Group feature.
+ */
+
+include_once 'siga_group.features.inc';
