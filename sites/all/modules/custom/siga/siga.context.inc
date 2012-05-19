@@ -78,6 +78,12 @@ function siga_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
+        'views-groups-block' => array(
+          'module' => 'views',
+          'delta' => 'groups-block',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
         'views-members-block' => array(
           'module' => 'views',
           'delta' => 'members-block',
