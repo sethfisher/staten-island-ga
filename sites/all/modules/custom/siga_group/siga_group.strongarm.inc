@@ -170,6 +170,13 @@ function siga_group_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'og_node_access_strict';
+  $strongarm->value = 0;
+  $export['og_node_access_strict'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_group_pattern';
   $strongarm->value = 'groups/[node:title]';
   $export['pathauto_node_group_pattern'] = $strongarm;
