@@ -52,9 +52,15 @@ function siga_update_7006() {
 }
 
 /**
- * Enable Entity, Entity reference, Organic Groups, OG UI, and SIGA Group
- * modules
+ * Enable Entity, Entity reference, Organic Groups, OG UI, and EVA modules
  */
 function siga_update_7007() {
-  module_enable(array('entity', 'entityreference', 'og', 'og_ui', 'siga_group'));
+  module_enable(array('entity', 'entityreference', 'og', 'og_ui', 'eva'));
+}
+
+/**
+ * Enable SIGA Group feature module
+ */
+function siga_update_7008() {
+  module_enable(array('siga_group'));
 }
