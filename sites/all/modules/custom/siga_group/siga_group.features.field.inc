@@ -49,7 +49,13 @@ function siga_group_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => '1',
+        ),
+        'mini_teaser' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -125,7 +131,13 @@ function siga_group_field_default_fields() {
             'field_name' => FALSE,
           ),
           'type' => 'og_group_subscribe',
-          'weight' => 0,
+          'weight' => '0',
+        ),
+        'mini_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
