@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the SIGA Flyer feature.
+ */
+
+include_once 'siga_flyer.features.inc';
