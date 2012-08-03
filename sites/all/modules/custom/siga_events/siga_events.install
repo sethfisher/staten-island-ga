@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Enable Colorbox, Colors, FullCalendar, FullCalendar Colors, and FullCalendar
+ * Options modules.
+ */
+function siga_events_update_7000() {
+  module_enable(array('colorbox', 'colors', 'fullcalendar', 'fullcalendar_colors', 'fullcalendar_options'));
+}
